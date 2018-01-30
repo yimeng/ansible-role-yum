@@ -1,0 +1,5 @@
+---
+# https://labs.consol.de/repo/stable/#_centos
+- name: set yum repository for the omd
+  yum: name=https://labs.consol.de/repo/stable/rhel6/i386/labs-consol-stable.rhel6.noarch.rpm
+  notify: yum update

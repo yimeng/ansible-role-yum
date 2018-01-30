@@ -1,0 +1,5 @@
+---
+# https://packages.gitlab.com/gitlab/gitlab-ce/install
+- name: set yum repository for the gitlab
+  raw: curl -s https://packages.gitlab.com/install/repositories/gitlab/gitlab-ce/script.rpm.sh | sudo bash
+  notify: yum update
