@@ -1,2 +1,5 @@
 ---
-# handlers file for yum
+- name: yum update
+  command: yum -y update
+- name: reposync
+  command: reposync -r {repo name} -n -p {repo path}

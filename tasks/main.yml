@@ -1,2 +1,4 @@
 ---
-# tasks file for yum
+- include: epel.yml
+- include: remi.yml
+- include: gitlab.yml
