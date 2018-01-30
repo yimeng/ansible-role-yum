@@ -1,4 +1,4 @@
 ---
-- include: epel.yml
-- include: remi.yml
-- include: gitlab.yml
+- import_tasks: epel.yml
+- import_tasks: remi.yml
+- import_tasks: gitlab.yml
